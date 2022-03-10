@@ -6,6 +6,13 @@ h1 {
   background-color: var(--red);
 } */
 
+/* CSS HEX
+--yale-blue: #274c77ff;
+--cerulean-frost: #6096baff;
+--baby-blue-eyes: #a3cef1ff;
+--alice-blue: #e7ecefff;
+--battleship-grey: #8b8c89ff; */
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -13,6 +20,15 @@ body {
 h1 {
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: #e7ecefff;
+  height: 70px;
+}
+
+h1,
+ul {
+  margin: initial;
 }
 
 ul {
@@ -20,12 +36,16 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  background-color: #274c77ff;
+  height: 35px;
 }
 
 li {
   margin-right: 50px;
+  font-size: 14px;
 }
 
 a:link {
-  color: black;
+  color: white;
 }
