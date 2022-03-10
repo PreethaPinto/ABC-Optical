@@ -1,0 +1,31 @@
+/* :root {
+  --red: #ff0000;
+}
+
+h1 {
+  background-color: var(--red);
+} */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+li {
+  margin-right: 50px;
+}
+
+a:link {
+  color: black;
+}
