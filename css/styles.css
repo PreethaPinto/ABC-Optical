@@ -26,12 +26,12 @@ h1 {
   height: 70px;
 }
 
-h1,
-ul {
+h1 {
   margin: initial;
 }
 
-ul {
+nav ul {
+  margin: initial;
   list-style: none;
   display: flex;
   flex-direction: row;
