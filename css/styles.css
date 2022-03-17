@@ -8,7 +8,7 @@ h1 {
 
 /* CSS HEX
 --yale-blue: #274c77ff;
---cerulean-frost: #6096baff;
+--cerulean-frost:  #274c77ff0;
 --baby-blue-eyes: #a3cef1ff;
 --alice-blue: #e7ecefff;
 --battleship-grey: #8b8c89ff; */
@@ -24,9 +24,6 @@ h1 {
   font-size: 20px;
   background-color: #e7ecefff;
   height: 70px;
-}
-
-h1 {
   margin: initial;
 }
 
@@ -48,4 +45,24 @@ li {
 
 a:link {
   color: white;
+}
+
+body > section > img {
+  height: auto;
+  width: 100%;
+}
+
+body > section:first-of-type {
+  background-color:  #274c77ff;
+
+}
+
+/* body > section:nth-of-type(2) {
+  height: 500px;
+  padding: 100px;
+  background-image: url(../images/image2.jpg);
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #e7ecefff; */
 }
