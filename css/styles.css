@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -73,7 +73,7 @@ nav > ul > li {
 }
 
 a:link {
-  color: black;
+  color: white;
 }
 
 a:visited {
@@ -81,7 +81,6 @@ a:visited {
 }
 
 section {
-  /* padding: 20px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
