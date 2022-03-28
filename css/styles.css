@@ -4,6 +4,7 @@
 --baby-blue-eyes: rgb(163, 206, 241);
 --alice-blue; rgb(231, 236, 239);
 --battleship-grey: rgb(139, 140, 137); */
+
 html {
   scroll-behavior: smooth;
 }
@@ -79,7 +80,57 @@ a:visited {
   color: white;
 }
 
-section {
+body > section:first-of-type {
+  background-color: rgb(139, 140, 137);
+  overflow: hidden;
+}
+
+body > section:first-of-type > figure {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 500%;
+  animation: 20s slidy infinite;
+}
+
+figure img {
+  width: 20%;
+  height: 70vh;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+/* about */
+body > section:nth-of-type(2) {
+  background-color: rgba(96, 150, 186, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,36 +140,30 @@ section {
   padding: 24px;
 }
 
-/* about */
-body > section:first-of-type {
-  background-color: rgba(96, 150, 186, 0.6);
-}
-
-/* body > section:first-of-type > p {
-  width: 50em;
-} */
-
 /* services */
-body > section:nth-of-type(2) {
-  background-image: url(../images/image4.jpg);
+body > section:nth-of-type(3) {
+  background-image: url(../images/image4.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  height: 75vh;
+  padding: 24px;
 }
-
-/* body > section:nth-of-type(2) ul {
-  width: 30em;
-} */
 
 /* contact */
 body > section:last-of-type {
   background-color: rgba(163, 206, 241, 0.5);
   width: 100%;
   display: flex;
-
   justify-content: center;
   align-items: center;
   text-align: justify;
+  padding: 24px;
 }
 
 body > section:last-of-type > div {
