@@ -35,17 +35,13 @@ ul {
 }
 
 h1 {
-  background-image: url(../images/image1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 75vh;
-  width: 100vw;
   font-weight: bold;
   font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100px;
 }
 
 nav ul {
@@ -95,9 +91,9 @@ body > section:first-of-type {
   background-color: rgba(96, 150, 186, 0.6);
 }
 
-body > section:first-of-type > p {
+/* body > section:first-of-type > p {
   width: 50em;
-}
+} */
 
 /* services */
 body > section:nth-of-type(2) {
@@ -105,7 +101,6 @@ body > section:nth-of-type(2) {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* position: relative; */
 }
 
 body > section:nth-of-type(2) ul {
