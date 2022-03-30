@@ -90,7 +90,7 @@ body > section:first-of-type > figure {
   flex-direction: row;
   position: relative;
   width: 500%;
-  animation: 20s slidy infinite;
+  animation: 15s slider infinite;
 }
 
 figure img {
@@ -98,7 +98,7 @@ figure img {
   height: 70vh;
 }
 
-@keyframes slidy {
+@keyframes slider {
   0% {
     left: 0%;
   }
