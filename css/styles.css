@@ -14,6 +14,7 @@ html {
   padding: 0%;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -50,7 +51,6 @@ h1 {
 
 nav {
   background-color: rgba(39, 76, 119);
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -65,21 +65,6 @@ nav > ul > li {
 
 a:link {
   color: white;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-input,textarea{
-  width:200px;
-}
-
-button{
-  padding: 4px;
-  margin-top:8px;
-  align-self: flex-end;
 }
 
 a:visited {
@@ -97,7 +82,6 @@ body > section:first-of-type {
   height: 70vh;
   
 }
-
 
 /* about */
 body > section:nth-of-type(2) {
@@ -140,6 +124,21 @@ body > section:last-of-type {
 
 body > section:last-of-type > div {
   margin-right: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,textarea{
+  width:200px;
+}
+
+button{
+  padding: 4px;
+  margin-top:8px;
+  align-self: flex-end;
 }
 
 @media only screen and (max-width: 768px) {
