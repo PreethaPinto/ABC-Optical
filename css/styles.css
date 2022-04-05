@@ -48,27 +48,18 @@ h1 {
   height: 100px;
 }
 
-nav ul {
-  margin: initial;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  width: 100%;
-}
-
 nav {
   background-color: rgba(39, 76, 119);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1;
+  text-align: center;
 }
 
 nav > ul > li {
-  margin: 25px;
+  display: inline-block;
+  padding: 20px;
   font-size: 14px;
 }
 
@@ -95,7 +86,6 @@ a:visited {
   color: white;
 }
 
-/* home section */
 body > section:first-of-type {
   display: flex;
   justify-content: center;
@@ -105,10 +95,11 @@ body > section:first-of-type {
   background-size: cover;
   background-position: center center;
   height: 70vh;
+  
 }
 
 
-/* about section */
+/* about */
 body > section:nth-of-type(2) {
   background-color: rgba(96, 150, 186, 0.6);
   display: flex;
@@ -120,12 +111,9 @@ body > section:nth-of-type(2) {
   padding: 24px;
 }
 
-body > section:nth-of-type(2) > p {
-  width: 70vw;
-}
-
-/* services section */
+/* services */
 body > section:nth-of-type(3) {
+
   background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(../images/image4.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,12 +127,7 @@ body > section:nth-of-type(3) {
   padding: 24px;
 }
 
-body > section:nth-of-type(3) >ul {
-  width: 70vw;
-}
-
-
-/* contact section*/
+/* contact */
 body > section:last-of-type {
   background-color: rgba(163, 206, 241, 0.5);
   width: 100%;
@@ -155,9 +138,17 @@ body > section:last-of-type {
   padding: 24px;
 }
 
-/* media queries */
 body > section:last-of-type > div {
   margin-right: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  body > section:first-of-type{
+    height: 50vh;
+    padding-left: initial;
+    background-color: rgb(231, 236, 239);
+    background-image: initial;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -169,15 +160,6 @@ body > section:last-of-type > div {
 @media only screen and (max-width: 600px) {
   body > section:last-of-type {
     flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  body > section:first-of-type{
-    height: 50vh;
-    padding-left: initial;
-    background-color: rgb(231, 236, 239);
-    background-image: initial;
   }
 }
 
