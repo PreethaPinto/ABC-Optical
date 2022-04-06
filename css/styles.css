@@ -50,7 +50,7 @@ h1 {
 }
 
 nav {
-  background-color: rgba(39, 76, 119);
+  background-color: rgb(39, 76, 119);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -64,11 +64,11 @@ nav > ul > li {
 }
 
 a:link {
-  color: white;
+  color: rgb(186,186,186);
 }
 
 a:visited {
-  color: white;
+  color: rgb(182,186,186);
 }
 
 body > section:first-of-type {
