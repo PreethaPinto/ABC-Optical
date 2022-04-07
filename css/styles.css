@@ -17,6 +17,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  color:rgb(0,0,0,.7);
 }
 
 h1 {
@@ -75,12 +76,33 @@ body > section:first-of-type {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 40vh;
+  padding-left: 30vh;
   background-image: url(../images/welcome-banner.jpeg);
   background-size: cover;
   background-position: center center;
   height: 70vh;
+  
 }
+body > section:first-of-type * img {
+  width:90px;
+}
+body > section:first-of-type > div > div{
+display: flex;
+padding: 36px;
+max-width: 500px;
+animation: fade-1 2s;
+}
+body > section:first-of-type > div > div > img{
+  margin-right: 16px;
+  
+}
+
+@keyframes fade-1 {
+  0% { opacity: 0; transform: translateY(1000%); }
+  33% { opacity: 0.3; }
+  66% { opacity: 0.6; }
+  100% { opacity: 1; transform: translateY(0%);}
+ }
 
 /* about */
 body > section:nth-of-type(2) {
@@ -95,7 +117,7 @@ body > section:nth-of-type(2) {
 }
 
 body > section:nth-of-type(2) p {
-  width: 60vw;
+  width: 50vw;
 }
 
 
@@ -145,6 +167,8 @@ button{
   align-self: flex-end;
 }
 
+
+/* Styles targeting Tablets (Ipad Mini) and smaller */
 @media only screen and (max-width: 768px) {
   body > section:first-of-type{
     height: 50vh;
@@ -154,29 +178,33 @@ button{
   }
 }
 
+/* Styles targeting phones */
+@media only screen and (max-width: 600px) {
+  body > section:first-of-type > div >  div:last-of-type {
+    display: none;
+  }
+
+  body > section:last-of-type {
+    flex-direction: column;
+  }
+
+  iframe {
+    margin-top: 20px;
+    width: 95%;
+  }
+  body > section:nth-of-type(2) p{
+    width: 80vw;
+  }
+}
+
+/* Styles targeting tablets and desktops */
 @media only screen and (min-width: 600px) {
   body > section:last-of-type {
     flex-direction: row;
   }
-}
-
-@media only screen and (max-width: 600px) {
-  body > section:last-of-type {
-    flex-direction: column;
-  }
-}
-
-@media only screen and (min-width: 600px) {
   iframe {
     margin-top: 20px;
     width: 40%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  iframe {
-    margin-top: 20px;
-    width: 95%;
   }
 }
 
