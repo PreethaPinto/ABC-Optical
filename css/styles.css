@@ -81,27 +81,28 @@ body > section:first-of-type {
   background-size: cover;
   background-position: center center;
   height: 70vh;
-  
 }
+
 body > section:first-of-type * img {
   width:90px;
 }
+
 body > section:first-of-type > div > div{
 display: flex;
 padding: 36px;
 max-width: 500px;
 animation: fade-1 2s;
 }
+
 body > section:first-of-type > div > div > img{
   margin-right: 16px;
-  
 }
 
 @keyframes fade-1 {
-  0% { opacity: 0; transform: translateY(1000%); }
+  0% { opacity: 0; transform: translateX(100%); }
   33% { opacity: 0.3; }
   66% { opacity: 0.6; }
-  100% { opacity: 1; transform: translateY(0%);}
+  100% { opacity: 1; transform: translateX(0%);}
  }
 
 /* about */
@@ -166,7 +167,6 @@ button{
   margin-top:8px;
   align-self: flex-end;
 }
-
 
 /* Styles targeting Tablets (Ipad Mini) and smaller */
 @media only screen and (max-width: 768px) {

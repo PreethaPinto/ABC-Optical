@@ -25,36 +25,35 @@
 
     <section id="home">
         <div>
-        <div>
-            <img alt="australia" src="images/australia.svg">
             <div>
-            <h2>Frames designed in Australia</h2>
-            <p>
-                Our design team in Brisbane is working all season to create incredible frames
-            </p>
+                <img src="images/australia.svg" alt="australia">
+                <div>
+                    <h2>Frames designed in Australia</h2>
+                    <p>
+                        Our design team in Brisbane is working all season to create incredible frames
+                    </p>
+                </div>
+            </div>
+        <div>
+            <img src="images/service.png" alt="services">
+            <div>
+                <h2>Full Service Optometry</h2>
+                <p>
+                    We conduct eyes tests for prescription and eye health. All services are bulk billed
+                </p>
             </div>
         </div>
         <div>
-            <img alt="services" src="images/service.png">
+            <img  src="images/delivery.svg" alt="delivery">
             <div>
-            <h2>Full Service Optometry</h2>
-            <p>
-                We conduct eyes tests for prescription and eye health. All services are bulk billed
-            </p>
+                <h2>Free shipping and 30 day return</h2>
+                <p>
+                    All our glasses and contact lenses ship within 2 days and it is free. Return within 30 days for a full refund
+                </p>
             </div>
         </div>
-        <div>
-            <img alt="delivery" src="images/delivery.svg">
-            <div>
-            <h2>Free shipping and 30 day return</h2>
-            <p>
-                All our glasses and contact lenses ship within 2 days and it is free. Return within 30 days for a full refund
-            </p>
-            </div>
         </div>
-    </div>
-        
-    </section>
+        </section>
 
     <section id="about">
         <h2>About Us</h2>
@@ -98,7 +97,7 @@
 
             <h2>Or Message us at:</h2> <br>
             
-            <form>
+            <form onsubmit="return false">
                 <label for="name">Name:</label> 
                 <input type="text" id="name"> 
                 <label for="email">Email:</label>
@@ -107,8 +106,7 @@
                 <input type="tel" id="phone"> 
                 <label for="message">Message:</label> 
                 <textarea id="message" rows="4"></textarea> 
-
-                <button >Submit</button>
+                <button onclick="onSubmit()">Submit</button>
             </form>
         </div>
 
@@ -127,5 +125,15 @@
  </a>  &copy; 2022  ABC Optical 
 </footer>
 </body>
+
+<script>
+    function onSubmit(){
+        let name=document.getElementById('name').value;
+        if(!name){
+        {alert('Please enter a name')};
+        return;}
+        alert(`Thank you for contacting us ${name}` );
+    }
+</script>
 </html>
 
