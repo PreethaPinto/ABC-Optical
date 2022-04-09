@@ -17,7 +17,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  color:rgb(0,0,0,.7);
+  color: rgb(0, 0, 0, 0.7);
 }
 
 h1 {
@@ -51,7 +51,7 @@ h1 {
 }
 
 nav {
-  background-color: rgb(60,118,185);
+  background-color: rgb(60, 118, 185);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -84,26 +84,36 @@ body > section:first-of-type {
 }
 
 body > section:first-of-type * img {
-  width:90px;
+  width: 90px;
 }
 
-body > section:first-of-type > div > div{
-display: flex;
-padding: 36px;
-max-width: 500px;
-animation: fade-1 2s;
+body > section:first-of-type > div > div {
+  display: flex;
+  padding: 36px;
+  max-width: 500px;
+  animation: fade-1 2s;
 }
 
-body > section:first-of-type > div > div > img{
+body > section:first-of-type > div > div > img {
   margin-right: 16px;
 }
 
 @keyframes fade-1 {
-  0% { opacity: 0; transform: translateX(100%); }
-  33% { opacity: 0.3; }
-  66% { opacity: 0.6; }
-  100% { opacity: 1; transform: translateX(0%);}
- }
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  33% {
+    opacity: 0.3;
+  }
+  66% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
 
 /* about */
 body > section:nth-of-type(2) {
@@ -121,11 +131,13 @@ body > section:nth-of-type(2) p {
   width: 50vw;
 }
 
-
 /* services */
 body > section:nth-of-type(3) {
-
-  background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(../images/image4.jpeg);
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(../images/image4.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -158,19 +170,20 @@ form {
   flex-direction: column;
 }
 
-input,textarea{
-  width:200px;
+input,
+textarea {
+  width: 200px;
 }
 
-button{
+button {
   padding: 4px;
-  margin-top:8px;
+  margin-top: 8px;
   align-self: flex-end;
 }
 
 /* Styles targeting Tablets (Ipad Mini) and smaller */
 @media only screen and (max-width: 768px) {
-  body > section:first-of-type{
+  body > section:first-of-type {
     height: 50vh;
     padding-left: initial;
     background-color: rgb(231, 236, 239);
@@ -180,7 +193,7 @@ button{
 
 /* Styles targeting phones */
 @media only screen and (max-width: 600px) {
-  body > section:first-of-type > div >  div:last-of-type {
+  body > section:first-of-type > div > div:last-of-type {
     display: none;
   }
 
@@ -192,7 +205,7 @@ button{
     margin-top: 20px;
     width: 95%;
   }
-  body > section:nth-of-type(2) p{
+  body > section:nth-of-type(2) p {
     width: 80vw;
   }
 }
@@ -208,8 +221,8 @@ button{
   }
 }
 
-footer{
-  padding: 8px;;
+footer {
+  padding: 8px;
   display: flex;
   justify-content: center;
 }
