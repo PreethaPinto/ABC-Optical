@@ -169,6 +169,20 @@
         }
         return;
       }
+      let email = document.getElementById("email").value;
+      if (!email) {
+        {
+          alert("Please enter an Email address");
+        }
+        return;
+      }
+      let message = document.getElementById("message").value;
+      if (!message) {
+        {
+          alert("Please enter a message");
+        }
+        return;
+      }
       alert(`Thank you for contacting us ${name}`);
     }
   </script>
